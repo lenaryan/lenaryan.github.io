@@ -1,0 +1,1 @@
+console.log(8),console.log(12),console.log(16);

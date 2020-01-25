@@ -19,9 +19,9 @@
                 <ul class="main-nav right hide-on-med-and-down">
                     <li><a href="/works">Works</a></li>
                     <li><a href="/about-me">About Me</a></li>
-                    <li><a class="btn-floating green" href="https://vk.com/lena_ryan" target="_blank" rel="noopener noreferrer"><span class="fab fa-vk"></span></a></li>
-                    <li><a class="btn-floating green" style="margin: 0" href="https://www.instagram.com/russian_plazma_drink" target="_blank" rel="noopener noreferrer"><span class="fab fa-instagram"></span></a></li>
-                    <li><a class="btn-floating green" href="https://twitter.com/metalwebdev" target="_blank" rel="noopener noreferrer"><span class="fab fa-twitter"></span></a></li>
+                    <li><a class="btn-floating green" href="https://vk.com/lena_ryan" target="_blank" rel="noopener noreferrer"><img src="/src/img/vk.svg" alt="vk"></a></li>
+                    <li><a class="btn-floating green" style="margin: 0" href="https://www.instagram.com/russian_plazma_drink" target="_blank" rel="noopener noreferrer"><img src="/src/img/instagram.svg" alt="instagram"></a></li>
+                    <li><a class="btn-floating green" href="https://twitter.com/metalwebdev" target="_blank" rel="noopener noreferrer"><img src="/src/img/twitter.svg" alt="twitter"></a></li>
                 </ul>
             </div>
 
@@ -29,13 +29,13 @@
                 <li><a href="/works">Works</a></li>
                 <li><a href="/about-me">About Me</a></li>
                 <li><a class="social-mob" href="https://vk.com/lena_ryan" target="_blank" rel="noopener noreferrer">
-                        <span class="fab fa-vk light-green-text text-accent-3"></span>
+                        <img src="/src/img/vk.svg" alt="vk">
                     </a>
                     <a class="social-mob" href="https://www.instagram.com/russian_plazma_drink" target="_blank" rel="noopener noreferrer">
-                        <span class="fab fa-instagram light-green-text text-accent-3"></span>
+                        <img src="/src/img/instagram.svg" alt="instagram">
                     </a>
                     <a class="social-mob" href="https://twitter.com/metalwebdev" target="_blank" rel="noopener noreferrer">
-                        <span class="fab fa-twitter light-green-text text-accent-3"></span>
+                        <img src="/src/img/twitter.svg" alt="twitter">
                     </a></li>
             </ul>
         </nav>
@@ -191,5 +191,21 @@
         </div>
     </footer>
     <script src="../build/js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var tabs = document.querySelectorAll('.tabs');
+            var instance = M.Tabs.init(tabs, {
+                swipable: true
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems);
+        });    
+    </script>
 </body>
 </html>

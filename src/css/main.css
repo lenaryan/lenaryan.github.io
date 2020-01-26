@@ -54,7 +54,6 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
 }
 .social-mob img {
     display: block;
-    max-width: 25px;
-    width: 100%;
+    width: 25px;
     max-height: 25px;
 }

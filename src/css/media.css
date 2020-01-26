@@ -10,6 +10,23 @@ footer p{font-size: 21px;line-height: 1.6;}
 .me img {width: 50%;margin: 0 25% 30px;}
 .text-me {margin: 50px 0 70px;}
 }
+@media all and (max-width: 500px) {
+    .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .tabs .indicator {
+        display: none;
+    }
+
+    .tabs .tab {
+        height: 40px;
+        line-height: 40px;
+    }
+}
 @media all and (max-width: 480px) {h1{font-size: 8vw;}
 nav .brand-logo{font-size: 21px;}
 .home h1 {font-size: 45px;}

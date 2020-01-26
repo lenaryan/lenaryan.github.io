@@ -42,6 +42,7 @@ nav .brand-logo, footer p{font-size: 19px;}
 .me img {width: 70%;margin: 0 15% 30px;}
 .text-me {margin: 35px 0 60px;}
 .blog .card .card-content {padding: 15px 17px;}
+.me .material-icons{top: 2px;}
 }
 @media all and (max-width: 320px) {.home h1 {font-size: 41px;}
 .home h2 {font-size: 25px;}

@@ -17,7 +17,7 @@ const jsFiles = [
     './src/js/main.js'
 ]
 
-function styles() {
+const styles = () => {
     return gulp.src(cssFiles)
     .pipe(concat('style.css'))
     .pipe(autoprefixer({
@@ -31,7 +31,9 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
-function scripts() {
+exports.styles = styles;
+
+const scripts = () => {
     return gulp.src(jsFiles)
     .pipe(concat('script.js'))
     .pipe(uglify({
@@ -41,11 +43,15 @@ function scripts() {
     .pipe(browserSync.stream());
 }
 
-function clean() {
+exports.scripts = scripts;
+
+const clean = () => {
     return del(['build/*']);
 }
 
-function watch() {
+exports.clean = clean;
+
+const watch = () => {
     browserSync.init({
         server: {
             baseDir: './'
@@ -56,10 +62,11 @@ function watch() {
     gulp.watch('./*.html').on('change', browserSync.reload);
 }
 
-gulp.task('styles', styles);
-gulp.task('scripts', scripts);
-gulp.task('del', clean);
-gulp.task('watch', watch);
+exports.watch = watch;
 
-gulp.task('build', gulp.series(clean, gulp.parallel(styles, scripts)));
-gulp.task('dev', gulp.series('build', 'watch'))
+const build = (done) => {
+    return gulp.series(clean, gulp.parallel(styles, scripts))(done);
+}
+
+exports.build = build;
+exports.dev = gulp.series(build, watch);

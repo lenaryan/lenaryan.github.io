@@ -7,13 +7,11 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 
 const cssFiles = [
-    './src/css/materialize.min.css',
     './src/css/main.css',
     './src/css/media.css'
 ]
 
 const jsFiles = [
-    './src/js/materialize.min.js',
     './src/js/main.js'
 ]
 

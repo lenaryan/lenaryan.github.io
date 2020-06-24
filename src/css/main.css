@@ -6,6 +6,7 @@
 
 :root {
     --grad: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0.25));
+    --white-shining: 0 0 10px #fff;
 }
 
 body {
@@ -36,4 +37,14 @@ body {
 
 .btn:hover {
     box-shadow: 10px 10px 35px -20px black;
+}
+
+.who__img {
+    border-radius: 20px;
+    box-shadow: var(--white-shining);
+}
+
+.what__img {
+    border-radius: 50%;
+    box-shadow: var(--white-shining);
 }

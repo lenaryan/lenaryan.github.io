@@ -21,6 +21,14 @@ body {
     margin: 0 auto;
 }
 
+.h2-title {
+    background: linear-gradient(#fff, rgba(255, 255, 255, 0.25));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
 .btn {
     background-image: var(--grad);
     border-radius: 10px;

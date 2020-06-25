@@ -99,6 +99,62 @@ section {
 .h2-title {
     text-align: center;
     margin-bottom: 65px;
+    font-size: 32px;
+    font-family: 'Montserrat-SemiBold';
+}
+
+.who__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.who__text {
+    margin-right: 100px;
+}
+
+.paragraph {
+    color: white;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.who__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.who__item {
+    color: white;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 7px;
+    position: relative;
+    padding-left: 27px;
+}
+
+.who__item:before {
+    content: url(/src/img/arrow-right.svg);
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.who__link {
+    color: white;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+    white-space: nowrap;
+}
+
+.who__link:hover {
+    filter: drop-shadow(0 5px 5px white);
 }
 
 .btn {

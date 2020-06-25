@@ -62,6 +62,31 @@ body {
     justify-content: space-between;
 }
 
+.banner {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25), transparent);
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner__title {
+    font-family: 'Montserrat-Bold';
+    text-transform: uppercase;
+    color: white;
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 0 0 10px 0;
+}
+
+.banner__text {
+    font-family: 'Montserrat-Light';
+    font-size: 26px;
+    margin: 0;
+    line-height: 1.2;
+}
+
 .h2-title {
     text-align: center;
     margin-bottom: 65px;

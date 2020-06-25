@@ -22,9 +22,6 @@ body {
 }
 
 .h2-title {
-    background: linear-gradient(#fff, rgba(255, 255, 255, 0.25));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     text-align: center;
     margin-bottom: 65px;
 }
@@ -46,6 +43,12 @@ body {
 
 .btn:hover {
     box-shadow: 10px 10px 35px -20px black;
+}
+
+.text-grad {
+    background: linear-gradient(#fff, rgba(255, 255, 255, 0.25));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .who__img {

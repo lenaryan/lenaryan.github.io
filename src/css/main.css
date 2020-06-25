@@ -16,7 +16,7 @@ html {
 body {
     margin: 0;
     font-family: 'Montserrat-Regular', 'Arial', sans-serif;
-    background-image: linear-gradient(150deg, #A74FFE 10%, rgba(7, 12, 142, 0.673911) 40%, rgba(78, 64, 243, 0.62) 69%, #00FFFF 90%, #00FF66);;
+    background-image: linear-gradient(150deg, #A74FFE 10%, rgba(7, 12, 142, 0.673911) 40%, rgba(78, 64, 243, 0.62) 69%, #00FFFF 90%, #00FF66);
 }
 
 .container {
@@ -85,6 +85,15 @@ body {
     font-size: 26px;
     margin: 0;
     line-height: 1.2;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.who {
+    padding-top: 100px;
 }
 
 .h2-title {

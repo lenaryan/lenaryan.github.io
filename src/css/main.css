@@ -9,6 +9,10 @@
     --white-shining: 0 0 10px #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat-Regular', 'Arial', sans-serif;

@@ -21,6 +21,28 @@ body {
     margin: 0 auto;
 }
 
+.menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu__item:not(:first-of-type) {
+    margin-left: 50px;
+}
+
+.menu__link {
+    font-size: 18px;
+    font-family: 'Montserrat-Medium';
+}
+
+.menu__link:hover {
+    -webkit-text-fill-color: white;
+    text-decoration: none;
+}
+
 .h2-title {
     text-align: center;
     margin-bottom: 65px;

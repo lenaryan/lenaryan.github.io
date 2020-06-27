@@ -258,3 +258,43 @@ section {
     padding: 100px 0 110px;
     background-image: linear-gradient(to top, rgba(34, 34, 34, 0.3) 10%, rgba(141, 141, 141, 0.06) 100%);
 }
+
+.year__container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 40px;
+}
+
+.year__works {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 35px 30px;
+}
+
+.year__work {
+    box-shadow: var(--white-shining);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.year__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.year__number {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.year__span {
+    font-weight: 'Montserrat-Medium';
+    font-size: 70px;
+    line-height: 1.1;
+    position: sticky;
+    top: 100px;
+    color: rgba(255,255,255,0.3);
+    text-shadow: var(--white-shining);
+}

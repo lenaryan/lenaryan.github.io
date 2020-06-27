@@ -271,18 +271,67 @@ section {
     grid-gap: 35px 30px;
 }
 
-.year__work {
+.work {
     box-shadow: var(--white-shining);
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
 }
 
-.year__img {
+.work__img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.work__info {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 25px 20px 20px;
+}
+
+.work__title {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.work__tools {
+    margin: 0 0 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.work:hover .work__img {
+    opacity: 0;
+    z-index: -1;
+}
+
+.work:hover .work__info {
+    z-index: 1;
+    opacity: 1;
+}
+
+.work__link {
+    width: 170px;
+    height: 40px;
+    font-size: 18px;
+    margin: 0 auto;
 }
 
 .year__number {

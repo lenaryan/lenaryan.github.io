@@ -347,3 +347,7 @@ section {
     color: rgba(255,255,255,0.3);
     text-shadow: var(--white-shining);
 }
+
+.footer--works {
+    margin-top: 50px;
+}

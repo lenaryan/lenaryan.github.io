@@ -1,0 +1,94 @@
+@media (max-width: 1024px) {
+    .who__img {
+        width: 350px;
+    }
+
+    .paragraph {
+        font-size: 22px;
+    }
+
+    .who__item {
+        font-size: 22px;
+    }
+
+    .who__text {
+        margin-right: 35px;
+    }
+
+    .use__wrapper--left {
+        margin-left: 50px;
+    }
+
+    .use__wrapper--right {
+        margin-right: 50px;
+    }
+
+    .more__wrapper {
+        flex-wrap: wrap;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .more__link {
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        padding: 75px 0 90px;
+    }
+
+    .year__container {
+        grid-template-columns: 180px 1fr;
+        grid-gap: 35px;
+    }
+
+    .year__span {
+        font-size: 60px;
+    }
+
+    .work__title {
+        font-size: 28px;
+    }
+
+    .work__tools {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 900px) {
+    .who__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .who__text {
+        margin-right: 0;
+        order: 1;
+        margin-top: 50px;
+    }
+
+    .what__img {
+        width: 250px;
+    }
+
+    .use__wrapper--left {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .use__wrapper--right {
+        margin-right: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .year__container {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+    .year__number {
+        border-right: none;
+    }
+}

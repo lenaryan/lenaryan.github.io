@@ -106,7 +106,49 @@
     }
 
     .menu__item:not(:first-of-type) {
-        margin-left: 35px;
+        margin-left: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        transform: translateY(-50%);
+        right: 0;
+        top: 50%;
+        width: 170px;
+        background-color: transparent;
+        padding: 0;
+        box-sizing: border-box;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu__link {
+        background: white;
+        display: block;
+        font-family: Montserrat-Medium;
+        height: 2px;
+        margin-bottom: 3px;
+        transition: all 0.3s ease-in-out;
+        pointer-events: none;
+    }
+
+    .menu.opened {
+        width: 50vw;
+        top: 100%;
+        background-color: rgba(0,0,0,0.5);
+        padding: 20px;
+        transform: translateY(0);
+    }
+
+    .menu.opened .menu__link {
+        background: linear-gradient(#fff,rgba(255,255,255,.25));
+        display: initial;
+        font-family: Montserrat-Medium;
+        height: auto;
+        margin-bottom: 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        pointer-events: auto;
     }
 
     .banner {

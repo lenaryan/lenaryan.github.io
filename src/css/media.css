@@ -82,7 +82,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .year__container {
         grid-template-columns: 1fr;
         grid-gap: 30px;
@@ -90,5 +90,75 @@
 
     .year__number {
         border-right: none;
+    }
+}
+
+@media (max-width: 640px) {
+    section {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .header {
+        position: fixed;
+        left: 0;
+        right: 0;
+    }
+
+    .menu__item:not(:first-of-type) {
+        margin-left: 35px;
+    }
+
+    .banner {
+        height: 100vh;
+        box-sizing: border-box;
+        background-image: none;
+    }
+
+    .year__span {
+        font-size: 50px;
+    }
+
+    .h2-title {
+        margin-bottom: 45px;
+        font-size: 30px;
+    }
+
+    .what__img {
+        width: 230px;
+        margin: 0 20px 20px;
+    }
+
+    .what__wrapper {
+        margin-bottom: 55px;
+    }
+
+    .sometimes__img, .use__img {
+        margin: 0 20px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .btn {
+        font-size: 20px;
+        height: 55px;
+    }
+
+    .what__btn {
+        width: 160px;
+    }
+
+    .h2-title--mb {
+        margin-bottom: 30px;
+    }
+
+    .footer__link, .more__link {
+        width: 180px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .footer {
+        padding: 70px 0 75px;
     }
 }

@@ -157,6 +157,10 @@
         background-image: none;
     }
 
+    .who {
+        padding-top: 0;
+    }
+
     .year__span {
         font-size: 50px;
     }
@@ -202,5 +206,221 @@
 
     .footer {
         padding: 70px 0 75px;
+    }
+}
+
+@media (max-width: 480px) {
+    .paragraph, .who__item {
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+    .who__item {
+        margin-bottom: 10px;
+    }
+
+    .what__img {
+        width: 180px;
+        margin: 0 10px 15px;
+    }
+
+    .btn {
+        font-size: 18px;
+        height: 50px;
+    }
+
+    .sometimes__img, .use__img {
+        margin: 0 10px;
+        max-width: calc(30% - 20px);
+    }
+
+    .year__span {
+        font-size: 45px;
+    }
+
+    .year__container {
+        grid-gap: 25px;
+    }
+
+    .footer__link, .more__link {
+        width: 160px;
+    }
+}
+
+@media (max-width: 420px) {
+    .banner__title {
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .banner__text {
+        font-size: 24px;
+    }
+
+    .h2-title {
+        margin-bottom: 35px;
+        font-size: 28px;
+    }
+
+    .top-logo {
+        width: 150px;
+    }
+
+    .top-logo__img {
+        display: block;
+        max-width: 100%;
+    }
+
+    .paragraph, .who__item {
+        font-size: 17px;
+    }
+
+    section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .what__img {
+        width: 140px;
+    }
+
+    .what__wrapper {
+        margin-bottom: 40px;
+    }
+
+    .btn {
+        height: 45px;
+    }
+
+    .what__btn {
+        width: 150px;
+    }
+
+    .more__link {
+        margin-bottom: 15px;
+    }
+
+    .footer__link, .more__link {
+        width: 150px;
+    }
+
+    .footer {
+        padding: 30px 0 55px;
+    }
+
+    .more {
+        padding-bottom: 50px;
+    }
+
+    .h2-title {
+        margin-bottom: 25px;
+    }
+
+    .who__img {
+        width: 280px;
+    }
+
+    .who__text {
+        margin-top: 30px;
+    }
+
+    .header {
+        padding: 15px 0;
+    }
+
+    .who__item:before {
+        width: 12px;
+        height: 12px;
+    }
+
+    .who__item {
+        padding-left: 22px;
+    }
+
+    .work__title {
+        font-size: 26px;
+    }
+
+    .work__tools {
+        font-size: 16px;
+    }
+
+    .work__link {
+        height: 40px;
+        font-size: 17px;
+    }
+
+    .work__info {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .year__span {
+        font-size: 40px;
+    }
+
+    .year__works {
+        grid-gap: 25px;
+    }
+
+    .year__container {
+        grid-gap: 20px;
+    }
+
+    .btn {
+        font-size: 17px;
+    }
+
+    .footer__link, .more__link {
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 140px;
+    }
+
+    .more__link {
+        margin-bottom: 12px;
+    }
+
+    .h2-title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 320px) {
+    .banner__title {
+        font-size: 43px;
+    }
+
+    .banner__text {
+        font-size: 21px;
+    }
+
+    .paragraph, .who__item {
+        font-size: 15px;
+    }
+
+    .who__text {
+        margin-top: 25px;
+    }
+
+    .what__img {
+        width: 130px;
+    }
+
+    .what__wrapper {
+        margin-bottom: 25px;
+    }
+
+    .footer__link, .more__link {
+        width: 130px;
+    }
+
+    .year__span {
+        font-size: 37px;
+    }
+
+    .work__title {
+        font-size: 24px;
     }
 }

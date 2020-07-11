@@ -115,14 +115,14 @@
         transform: translateY(-50%);
         right: 0;
         top: 50%;
-        width: 170px;
+        width: 100px;
         background-color: transparent;
         padding: 0;
         box-sizing: border-box;
         transition: all 0.3s ease-in-out;
     }
 
-    .menu__link {
+    .menu__link, .menu__link:hover, .menu__link:focus, .menu__link:visited {
         background: white;
         display: block;
         font-family: Montserrat-Medium;
@@ -130,6 +130,8 @@
         margin-bottom: 3px;
         transition: all 0.3s ease-in-out;
         pointer-events: none;
+        -webkit-text-fill-color: transparent;
+        filter: none;
     }
 
     .menu.opened {

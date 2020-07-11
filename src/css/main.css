@@ -50,6 +50,7 @@ body {
 .menu__link {
     font-size: 18px;
     font-family: 'Montserrat-Medium';
+    text-decoration: none;
 }
 
 .menu__link:hover {

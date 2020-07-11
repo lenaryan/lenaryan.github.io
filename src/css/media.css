@@ -132,6 +132,7 @@
         pointer-events: none;
         -webkit-text-fill-color: transparent;
         filter: none;
+        text-decoration: none;
     }
 
     .menu.opened {
